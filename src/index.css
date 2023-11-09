@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: chocolate;
+}
+ul{
+    margin: 60px;
+}
