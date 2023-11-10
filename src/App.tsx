@@ -15,13 +15,26 @@ const mockTodos:ListofTodos = [
     id: 3,
     title: 'todo 3',
     completed: true
+  },{
+    id: 4,
+    title: 'todo 4',
+    completed: false
   }
 ]
 function App() {
   const [todos, setTodos] = useState(mockTodos)
 
+  const handleRemove = (id: number) => {
+    const newTodos = todos.filter(todo => todo.id !== id)
+    setTodos(newTodos)
+  }
+
   return (
-    <Todos todos={todos}/>
+    <div className="todoapp">
+      <Todos 
+        onRemoveTodo={handleRemove}
+        todos={todos}/>
+    </div>
   )
 }
 
