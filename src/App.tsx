@@ -1,6 +1,7 @@
 import { useState } from "react"
 import {Todos} from "./components/Todos"
 import { ListofTodos } from "./types"
+import { Todo } from "./components/Todo"
 
 const mockTodos:ListofTodos = [
   {
@@ -31,6 +32,9 @@ function App() {
 
   return (
     <div className="todoapp">
+      <h1 className="title">
+        Add Task
+      </h1>
       <Todos 
         onRemoveTodo={handleRemove}
         todos={todos}/>

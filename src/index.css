@@ -4,12 +4,19 @@
     margin: 0%;
     padding: 0%;
     background-color: #F3F3F3;
-    margin: auto;
     font-family: 'Caveat', cursive;
     font-size: 22px;
 }
+.title{
+    font-weight: lighter;
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 50px;
+}
 ul{
     width: 80%;
+    margin: auto;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     
@@ -19,14 +26,32 @@ li{
     background-color: #FFBDB7;
     width: 250px;
     height: 250px;
+    margin: 10px;
     position: relative;
 }
 .completed{
     text-decoration: line-through;
+    color: gray;
 }
 .task{
-    position: absolute;
+    background-color: #FFBDB7;
+}
+input{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+}
+label{
+    font-size: larger;
+    background-color: #FFBDB7;
 }
 .delete{
-    background-color: red;
+    background-color: #FFBDB7;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
